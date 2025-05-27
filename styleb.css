@@ -1,0 +1,114 @@
+* {
+	margin: 0;
+	padding: 0;
+	color: white;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+	user-select: none;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background-size: cover;
+	background-position: center;
+}
+
+
+.logout a i{
+	color: white;
+	background: #113946;
+}
+
+.sidebar{
+	position: fixed;
+	width: 250px;
+	left: 0;
+	height: 100%;
+	background: #EAD7BB;
+	overflow: auto;
+}
+
+.sidebar .text{
+	color: whitesmoke;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 65px;
+	text-align: center;
+	background: #EAD7BB;
+	letter-spacing: 1px;
+}
+#content {
+ margin-left: 200px;
+ padding: 20px;
+}
+nav ul{
+	background: #113946;
+	height: 100%;
+	width: 100%;
+	list-style: none;
+}
+
+nav ul li{
+	line-height: 60px;
+	border-bottom: 1px solid rgba(255, 255, 255, 1.0);
+}
+
+nav ul li a{
+	position: relative;
+	color: #FF8080;
+	text-decoration: none;
+	font-size: 20px;
+	padding-left: 30px;
+	font-weight: 500;
+	display: block;
+	width: 100%;
+	border-left: 3px solid transparent;
+}
+
+
+
+nav ul li a:hover{
+	color: #EAD7BB;
+	background: #1e1e1e;
+	border-left-color: #EAD7BB;
+}
+
+nav ul ul{
+	position: static;
+	display: none;
+}
+
+nav ul .cate-show.show{
+	display: block;
+}
+
+nav ul .mate-show.show{
+	display: block;
+}
+
+nav ul ul li{
+	line-height: 42px;
+	border-bottom: none;
+}
+
+nav ul ul li a{
+	font-size: 17px;
+	color: #EAD7BB;
+	padding-left: 80px;
+}
+
+nav ul li a i{
+	position: absolute;
+	top: 50%;
+	right: 20px;
+	transform: translateY(-50%);
+	font-size: 22px;
+	transition: transform 0.4s;
+}
+
+nav ul li a:hover i{
+	transform: translateY(-50%) rotate(-180deg);
+}
